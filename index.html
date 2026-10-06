@@ -19,43 +19,36 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="clientes.html">clientes</a>
+                  <a class="nav-link" href="#">clientes</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
+    
+    <form id="formClientes">
 
-    <h2 class="position-absolute top-50 start-50 translate-middle">
-        Hola soy la tabla
-    </h2>
-<form id="formClientes">
-
-      <input type="hidden" id="idCliente">
+      <input type="hidden" id="idEvento">
       <div class="form-group my-3"> 
-          <label for="txtNombre">nombre del cliente</label>
+          <label for="txtNombre">nombre del evento</label>
           <input type="text" id="txtNombre" class="form-control " required>
       </div>
       <div class="form-group my-3"> 
-          <label for="txtApellido">Apellido</label>
-          <input type="text" id="txtApellido" class="form-control " required>
+          <label for="txtNumber">Cantidad de personas</label>
+          <input type="number" id="txtNumber" class="form-control " required>
       </div>
-      <div class="form-group my-3"> 
-          <label for="txtTelefono">Telefono</label>
-          <input type="text" id="txtTelefono" class="form-control " required>
+       <div class="form-group my-3"> 
+          <label for="txtHoras">Cantidad de horas</label>
+          <input type="number" id="txtHoras" class="form-control " required>
       </div>
-      
-      <div class="form-group my-3"> 
-          <label for="txtEmail">Email</label>
-          <input type="text" id="txtEmail" class="form-control " required>
-      </div>
-      <div class="form-group my-3"> 
-          <label for="txtDireccion">Dirección</label>
-          <input type="text" id="txtDireccion" class="form-control " required>
-      </div>
+      <select name="" id="">
+        <option value="">Selecciona un Estado </option>
+        <option value="Pendiente">Pendiente</option>
+        <option value="Realizado">Realizado</option>
+      </select>
       
       <button type="submit" id="btnGuardar" class="btn btn-info mt-3"> GuardarRegistro</button>
     </form>
@@ -68,12 +61,13 @@
         <th>Email</th>
         <th>Dirección</th>
       </thead>
-      <tbody id="tabla-clientes" >
+      <tbody id="tablaClientes" >
         <td colspan="6">Cargando...</td>
       </tbody>
     </table>
-      </th>
-    </table>
+
+    
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
